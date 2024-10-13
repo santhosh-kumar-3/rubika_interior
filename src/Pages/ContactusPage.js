@@ -132,7 +132,7 @@ const ContactusPage = () => {
         </div>
 
         {/* for smaller screen */}
-        <div className="flex flex-col mx-auto mt-10 w-[92%] h-fit">
+        <div className="lg:hidden flex flex-col mx-auto mt-10 w-[92%] h-fit">
           <h2 className="text-[45px] md:text-[52px] font-semibold text-start w-full ">
             Contact us
           </h2>
