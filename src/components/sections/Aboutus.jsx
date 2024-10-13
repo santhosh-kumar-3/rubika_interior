@@ -10,7 +10,7 @@ const Aboutus = () => {
   return (
     <div>
       <div className="hidden md:flex h-[120vh] w-full py-10 font-robotoCondensed items-center">
-        <div className="hidden lg:absolute z-10 left-0">
+        <div className="absolute z-10 left-0">
           <img src={aboutbg} alt="bgImg" className="w-full h-[800px]" />
         </div>
 
@@ -41,11 +41,11 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <div className="w-full mobileS:h-[70vh] mobileM:h-[65vh] mobileL:h-[60vh] flex flex-col font-robotoCondensed text-white text-opacity-90 justify-center bg-dark md:hidden">
+      <div className="w-full h-fit py-16 flex flex-col font-robotoCondensed text-white text-opacity-90 justify-center bg-dark md:hidden">
         <h2 className="text-[40px] font-semibold text-start w-full pl-3 mb-6">
           About Us
         </h2>
-        <p className="text-[20px] font-semibold text-start mb-10 pl-3">
+        <p className="text-[20px] w-[95%] font-semibold text-start mb-10 pl-3">
           We are dedicated to bringing your woodworking dreams to reality. With
           a commitment to craftsmanship, integrity, and innovation, we strive to
           exceed your expectations with every project.

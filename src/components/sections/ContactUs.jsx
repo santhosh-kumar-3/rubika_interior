@@ -6,8 +6,7 @@ const ContactUs = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="bg-light h-[60vh] my-10 w-[90%] lg:w-full flex flex-col mx-auto justify-center font-robotoCondensed">
-      {/* <div className='w-[600px] h-[45vh] bg-dark '></div> */}
+    <div className="bg-light h-fit py-14 my-10 w-[90%] lg:w-full flex flex-col mx-auto justify-center font-robotoCondensed">
 
       <div className="w-[85%] lg:w-[80%] mx-auto">
         <h2 className="text-[40px] lg:text-[52px] text-start font-semibold w-full pl-3 mb-5">

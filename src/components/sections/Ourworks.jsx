@@ -97,7 +97,7 @@ const Ourworks = () => {
   };
 
   return (
-    <div className="mobileS:h-[90vh] h-[93vh] md:h-[100vh] w-full md:w-[95%] lg:w-[80%] mx-auto flex flex-col items-center">
+    <div className="h-fit pb-12 md:pb-20 w-full md:w-[95%] lg:w-[80%] mx-auto flex flex-col items-center">
       <h2 className="text-[40px] md:text-[52px] font-semibold text-center md:text-start w-full md:pl-5 mobileS:mb-3 mb-5 md:mb-6">
         Our Works
       </h2>
@@ -126,7 +126,7 @@ const Ourworks = () => {
               <img
                 src={image}
                 alt={selectedTab}
-                className="w-full mobileS:h-[350px] mobileM:h-[380px] md:max-h-[480px] lg:h-[520px] object-cover mb-10"
+                className="w-full mobileS:h-[350px] mobileM:h-[380px] md:max-h-[480px] lg:h-[520px] object-cover mb-5 md:mb-10"
               />
             </div>
           ))}

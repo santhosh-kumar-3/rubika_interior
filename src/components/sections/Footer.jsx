@@ -10,15 +10,15 @@ const Footer = () => {
   const location = useLocation();
 
   const servicesItem = [
-    { name: "Kitchen", href: "/service/kitchen" },
+    { name: "Kitchen", href: "/service/kitchen/" },
     { name: "Livingroom", href: "/service/livingroom" },
     { name: "Bedroom", href: "/service/bedroom" },
     { name: "Cabinetry", href: "/service/cabinetry" },
   ];
 
   const companyItem = [
-    { name: "Contact", href: "#" },
-    { name: "About", href: "#" },
+    { name: "Contact", href: "/contact-us/" },
+    { name: "About", href: "/about-us/" },
   ];
 
   return (
@@ -190,7 +190,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <footer className="md:hidden flex bg-dark w-full flex-col h-fit py-14 justify-center text-white font-robotoCondensed px-5">
+      <footer className="md:hidden flex bg-dark w-full flex-col h-fit pt-14 pb-6 justify-center text-white font-robotoCondensed px-5">
         <a href="#">
           <img src={logoWhite} alt="Logo" className="w-36" />
         </a>
@@ -220,14 +220,6 @@ const Footer = () => {
               >
                 {item.name}
               </Link>
-              <motion.div
-                className="absolute left-0 h-0.5 top-[-2px] bg-white"
-                initial={{ width: 0 }}
-                animate={{
-                  width: hoveredServiceItem === index ? "75%" : 0,
-                }}
-                transition={{ duration: 0.3 }}
-              />
             </li>
           ))}
         </ul>
@@ -253,14 +245,6 @@ const Footer = () => {
               >
                 {item.name}
               </Link>
-              <motion.div
-                className="absolute left-0 h-0.5 top-[-2px] bg-white"
-                initial={{ width: 0 }}
-                animate={{
-                  width: hoveredCompanyItem === index ? "75%" : 0,
-                }}
-                transition={{ duration: 0.3 }}
-              />
             </li>
           ))}
         </ul>
@@ -315,6 +299,28 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        <div className="mt-10 w-full flex flex-col">
+            <div className="border-t-[1px] border-gray-500 w-full"></div>
+
+            <div className="w-full flex flex-col justify-between mt-5 text-[17px]">
+              <h1>© Rubika Interior 2024. All Rights Reserved</h1>
+
+              <h1 className="mt-5">
+                Developed by{" "}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:underline"
+                >
+                  Santhoshkumar
+                </a>
+              </h1>
+            </div>
+          </div>
+
+          
       </footer>
     </div>
   );
