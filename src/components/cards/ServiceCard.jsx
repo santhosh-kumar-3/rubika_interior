@@ -32,7 +32,7 @@ const ServiceCard = ({ title, description, image }) => {
     </div>
 
     {/* for smaller device */}
-    <div className="lg:hidden mobileS:w-[290px] mobileM:w-[320px] mobileL:w-[360px] md:w-[350px] h-[260px] md:h-[290px] mx-auto font-robotoCondensed rounded-sm">
+    <div className="lg:hidden mobileS:w-[300px] mobileM:w-[340px] mobileL:w-[400px] md:w-[350px] h-[260px] md:h-[290px] mx-auto font-robotoCondensed rounded-sm">
       <div
         className="relative w-full mx-auto h-full bg-cover bg-center bg-no-repeat"
         style={{

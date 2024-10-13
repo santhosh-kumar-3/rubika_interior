@@ -7,7 +7,7 @@ const Hero = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="h-[80vh] md:h-[97vh] w-full font-robotoCondensed relative">
+    <div className="h-[70vh] md:h-[97vh] w-full font-robotoCondensed relative">
 
       {/* Background Image */}
       <img
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/55 to-transparent z-5"></div>
 
       {/* Content */}
-      <div className="w-full h-full flex flex-col justify-center pl-6 md:pl-12 lg:pl-36 pt-24 relative z-10">
+      <div className="w-[95%] md:w-full h-full flex flex-col justify-center pl-6 md:pl-12 lg:pl-36 pt-24 relative z-10">
         <h1 className="text-[40px] md:text-[50px] lg:text-[60px] font-semibold text-white leading-tight mb-5">
           Transforming ideas <br />
           <span className="pl-0.5">into greatness</span>

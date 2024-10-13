@@ -190,7 +190,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <footer className="md:hidden flex bg-dark w-full flex-col h-[145vh] mobileL:h-[140vh] py-14 justify-center text-white font-robotoCondensed px-5">
+      <footer className="md:hidden flex bg-dark w-full flex-col h-fit py-14 justify-center text-white font-robotoCondensed px-5">
         <a href="#">
           <img src={logoWhite} alt="Logo" className="w-36" />
         </a>
