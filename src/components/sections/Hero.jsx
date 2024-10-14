@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroImg from "../../assets/heroimg.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [isImageLoaded, setIsImageLoaded] = useState(false); 
 
   return (
     <div className="mobileS:h-[80vh] mobileM:h-[60vh] md:h-[97vh] w-full font-robotoCondensed relative">
-
       {/* Background Image */}
-      <img
-        src={HeroImg}
-        alt="description"
-        loading="lazy"
-        className="w-full h-full object-cover absolute top-0 left-0 z-0"
-      />
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <img
+          src={HeroImg}
+          alt="description"
+          loading="lazy"
+          className={`w-full h-full object-cover absolute top-0 left-0 z-0 transition-opacity duration-700 ${
+            isImageLoaded ? "opacity-100" : "opacity-0 blur-sm"
+          }`} // Blur and opacity transition
+          onLoad={() => setIsImageLoaded(true)} // Remove blur once loaded
+        />
+      </div>
 
       {/* Gradient Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/55 to-transparent z-5"></div>
@@ -33,7 +37,10 @@ const Hero = () => {
           that inspire and elevate your everyday experiences.
         </p>
 
-        <button onClick={ () => navigate('/contact-us')} className="bg-black/20 border-[1px] border-white w-[150px] md:w-[150px] text-white text-[16px] md:text-[18px] px-4 md:px-7 py-2.5 rounded-sm hover:bg-primary hover:text-white transition-all">
+        <button
+          onClick={() => navigate("/contact-us")}
+          className="bg-black/20 border-[1px] border-white w-[150px] md:w-[150px] text-white text-[16px] md:text-[18px] px-4 md:px-7 py-2.5 rounded-sm hover:bg-primary hover:text-white transition-all"
+        >
           Get a Quote
         </button>
       </div>
