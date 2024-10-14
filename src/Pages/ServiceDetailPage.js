@@ -14,7 +14,7 @@ const ServiceDetailPage = ({ name, description, images }) => {
       />
 
       {/* Main content */}
-      <div className="w-[95%] md:w-[85%] lg:w-[70%] h-[350px] mx-auto mt-5 md:mt-10 flex">
+      <div className="w-[93%] md:w-[85%] lg:w-[70%] h-[350px] mx-auto mt-5 md:mt-10 flex">
         {/* Vertical Line 1 */}
         <div className="hidden md:block border-l-[1.6px] border-black h-44 mt-24 mr-4"></div>
 

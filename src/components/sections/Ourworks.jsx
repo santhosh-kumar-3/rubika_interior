@@ -102,7 +102,7 @@ const Ourworks = () => {
         Our Works
       </h2>
       {/* Tabs */}
-      <div className="flex w-[90%] overflow-x-auto whitespace-nowrap space-x-5 md:space-x-6 pl-3 mb-4">
+      <div className="flex w-[90%] overflow-x-auto no-scrollbar whitespace-nowrap space-x-5 md:space-x-6 pl-3 mb-4">
         {Object.keys(tabData).map((tab) => (
           <button
             key={tab}
