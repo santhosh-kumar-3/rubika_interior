@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/heroimg.png";
+import HeroImg from "../../assets/heroimg.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
