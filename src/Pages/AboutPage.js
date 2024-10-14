@@ -1,6 +1,7 @@
 import React from "react";
 import aboutbg2 from "../assets/bg-img2.jpg";
 import aboutbg3 from "../assets/about-bg3.jpg";
+import aboutbgMain from "../assets/about-us.webp";
 import CountUp from "../components/count/CountUp";
 import pricing from "../assets/reward.png";
 import precision from "../assets/set-square.png";
@@ -44,8 +45,9 @@ const AboutPage = () => {
   return (
     <div className="h-fit flex flex-col w-full font-robotoCondensed ">
       <img
-        src={aboutbg3}
+        src={aboutbgMain}
         alt="description"
+        loading="lazy"
         className="w-full h-[55vh] md:h-[70vh] object-cover top-0 left-0 z-0"
       />
 

@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const [isImageLoaded, setIsImageLoaded] = useState(false); 
 
   return (
     <div className="mobileS:h-[80vh] mobileM:h-[60vh] md:h-[97vh] w-full font-robotoCondensed relative">
@@ -19,6 +18,7 @@ const Hero = () => {
           className={`w-full h-full object-cover absolute top-0 left-0 z-0 `}
         />
       </div>
+
       {/* Gradient Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/55 to-transparent z-5"></div>
 

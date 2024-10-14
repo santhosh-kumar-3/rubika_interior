@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import contactImg from "../assets/contactus-main.jpg";
+import contactImg from "../assets/contact-us.webp";
+import contactImgMobile from "../assets/contact-us.webp";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
@@ -19,18 +20,16 @@ const ContactusPage = () => {
     const templateID = "template_fx16gqs";
     const userID = "RI5xM4k0SS-iWhZfe";
 
-    emailjs
-      .sendForm(serviceID, templateID, e.target, userID)
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsSent(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setError("Something went wrong. Please try again.");
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+      (result) => {
+        console.log(result.text);
+        setIsSent(true);
+      },
+      (error) => {
+        console.log(error.text);
+        setError("Something went wrong. Please try again.");
+      }
+    );
 
     e.target.reset();
   };
@@ -44,17 +43,26 @@ const ContactusPage = () => {
 
   return (
     <div className="h-fit flex flex-col w-full pb-10 font-robotoCondensed">
-      {/* Background image */}
+      {/* Background Image - Mobile */}
+      <img
+        src={contactImgMobile}
+        alt="Contact Us Mobile"
+        loading="lazy"
+        className="w-full h-[55vh] object-cover block lg:hidden"
+      />
+
+      {/* Background Image - Larger Screens */}
       <img
         src={contactImg}
         alt="Contact Us"
-        className="w-full h-[55vh] md:h-[70vh] object-cover top-0 left-0 z-0"
+        loading="lazy"
+        className="w-full h-[70vh] object-cover hidden lg:block"
       />
 
       {/* Main content */}
       <div>
         {/* For larger screens */}
-        <div className="hidden md:flex w-[80%] h-[120vh] flex-col justify-center mx-auto py-10">
+        <div className="hidden lg:flex w-[80%] h-[120vh] flex-col justify-center mx-auto py-10">
           <h2 className="text-[52px] font-semibold text-start w-full pl-3 mb-6">
             Contact us
           </h2>
@@ -177,9 +185,7 @@ const ContactusPage = () => {
 
           <div className="pl-0 h-full flex flex-col p-6">
             <div>
-              <h1 className="text-[18px] tracking-widest uppercase">
-                Address
-              </h1>
+              <h1 className="text-[18px] tracking-widest uppercase">Address</h1>
               <p className="text-[18px] mt-6">
                 No - 70A 3rd main road, 8th cross, Vivekananda Nagar,
                 <br />
@@ -208,7 +214,9 @@ const ContactusPage = () => {
             </div>
 
             <div className="mt-12">
-              <h1 className="text-[18px] tracking-widest uppercase">Follow us</h1>
+              <h1 className="text-[18px] tracking-widest uppercase">
+                Follow us
+              </h1>
               <div className="flex space-x-6 mt-6">
                 <a
                   href="https://www.instagram.com/rubika_interior/"
@@ -244,7 +252,9 @@ const ContactusPage = () => {
                 onChange={handleInputChange}
               />
 
-              <label className="text-[17px] font-medium pt-4">EMAIL ADDRESS</label>
+              <label className="text-[17px] font-medium pt-4">
+                EMAIL ADDRESS
+              </label>
               <input
                 type="email"
                 name="email"
