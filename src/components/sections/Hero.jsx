@@ -8,8 +8,7 @@ const Hero = () => {
 
   return (
     <div className="mobileS:h-[80vh] mobileM:h-[60vh] md:h-[97vh] w-full font-robotoCondensed relative">
-      {/* Background Color before the image loads */}
-      <div className="absolute top-0 left-0 w-full h-full bg-dark opacity-90 z-0"></div>
+
 
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -17,10 +16,7 @@ const Hero = () => {
           src={HeroImg}
           alt="description"
           loading="lazy"
-          className={`w-full h-full object-cover absolute top-0 left-0 z-0 ${
-            isImageLoaded ? "block" : "hidden"
-          }`}
-          onLoad={() => setIsImageLoaded(true)}
+          className={`w-full h-full object-cover absolute top-0 left-0 z-0 `}
         />
       </div>
       {/* Gradient Overlay */}
