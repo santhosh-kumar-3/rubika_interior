@@ -77,7 +77,7 @@ const AboutPage = () => {
           </p>
 
           {/* Count Content */}
-          <div className="flex flex-col items-center md:flex-row text-[18px] pl-3 font-medium gap-6 md:gap-20 mb-10">
+          <div className="flex flex-col items-center md:flex-row text-[18px] md:pl-3 font-medium gap-6 md:gap-20 mb-10">
             <div className="text-center md:text-start">
               <h3>YEARS OF EXPERIENCE</h3>
               <CountUp endValue={10} duration={2000} />
