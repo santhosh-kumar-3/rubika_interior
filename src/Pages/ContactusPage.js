@@ -48,7 +48,7 @@ const ContactusPage = () => {
       <img
         src={contactImg}
         alt="Contact Us"
-        className="w-full h-[70vh] object-cover top-0 left-0 z-0"
+        className="w-full h-[55vh] md:h-[70vh] object-cover top-0 left-0 z-0"
       />
 
       {/* Main content */}

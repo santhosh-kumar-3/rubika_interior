@@ -46,7 +46,7 @@ const AboutPage = () => {
       <img
         src={aboutbg3}
         alt="description"
-        className="w-full h-[60vh] md:h-[70vh] object-cover top-0 left-0 z-0"
+        className="w-full h-[55vh] md:h-[70vh] object-cover top-0 left-0 z-0"
       />
 
       <div className="w-full flex flex-col justify-center md:h-[650px] text-dark relative">
