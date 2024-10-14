@@ -7,17 +7,17 @@ const Hero = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false); 
 
   return (
-    <div className="mobileS:h-[80vh] mobileM:h-[60vh] md:h-[97vh] w-full font-robotoCondensed relative">
+    <div className=" mobileS:h-[80vh] mobileM:h-[60vh] md:h-[97vh] w-full font-robotoCondensed relative">
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img
           src={HeroImg}
           alt="description"
           loading="lazy"
-          className={`w-full h-full object-cover absolute top-0 left-0 z-0 transition-opacity duration-700 ${
-            isImageLoaded ? "opacity-100" : "opacity-0 blur-sm"
-          }`} // Blur and opacity transition
-          onLoad={() => setIsImageLoaded(true)} // Remove blur once loaded
+          className={`w-full h-full object-cover absolute top-0 left-0 z-0 transition-opacity duration-500 ${
+            isImageLoaded ? "opacity-100" : "bg-dark opacity-50 blur-sm"
+          }`}
+          onLoad={() => setIsImageLoaded(true)}
         />
       </div>
 
