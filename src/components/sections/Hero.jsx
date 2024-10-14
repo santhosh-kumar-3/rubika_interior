@@ -13,6 +13,7 @@ const Hero = () => {
       <img
         src={HeroImg}
         alt="description"
+        loading="lazy"
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
       />
 
