@@ -45,7 +45,7 @@ const AboutPage = () => {
   return (
     <div className="h-fit flex flex-col w-full font-robotoCondensed ">
       <img
-        src={aboutbgMain}
+        src="https://res.cloudinary.com/dh3zzrrng/image/upload/v1729002382/about-us_ynmfqo.webp"
         alt="description"
         loading="lazy"
         className="w-full h-[55vh] md:h-[70vh] object-cover top-0 left-0 z-0"

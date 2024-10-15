@@ -1,7 +1,5 @@
 import React from "react";
 import ServiceCard from "../cards/ServiceCard";
-import demoImg1 from "../../assets/kitchen-img.jpg";
-import demoImg2 from "../../assets/bedroom-img.jpg";
 
 const Services = () => {
   const services = [
@@ -9,25 +7,25 @@ const Services = () => {
       title: "Bedroom",
       description:
         "Create your dream bedroom with our custom carpentry services. We design and build beds, wardrobes, and more, tailored to fit your style and space perfectly.",
-      image: demoImg2,
+      image: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990006/BR1_e2rp5t.jpg",
     },
     {
       title: "Kitchen",
       description:
         "Design and build the perfect kitchen with our bespoke services. We create kitchen units that maximize functionality and style.",
-      image: demoImg1,
+      image: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728989977/K1_j4xywm.jpg",
     },
     {
       title: "Livingroom",
       description:
         "Create your dream bedroom with our custom carpentry services. We design and build beds, wardrobes, and more, tailored to fit your style and space perfectly.",
-      image: demoImg1,
+      image: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990051/LR1_piwgsp.jpg",
     },
     {
       title: "Cabinetry",
       description:
         "Design and build the perfect kitchen with our bespoke services. We create kitchen units that maximize functionality and style.",
-      image: demoImg2,
+      image: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990033/C1_gyugi9.jpg",
     },
   ];
 

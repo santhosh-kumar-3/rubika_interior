@@ -45,7 +45,7 @@ const ContactusPage = () => {
     <div className="h-fit flex flex-col w-full pb-10 font-robotoCondensed">
       {/* Background Image - Mobile */}
       <img
-        src={contactImgMobile}
+        src="https://res.cloudinary.com/dh3zzrrng/image/upload/v1729002383/contact-us-mobile_cfmiqn.webp"
         alt="Contact Us Mobile"
         loading="lazy"
         className="w-full h-[55vh] object-cover block lg:hidden"
@@ -53,7 +53,7 @@ const ContactusPage = () => {
 
       {/* Background Image - Larger Screens */}
       <img
-        src={contactImg}
+        src="https://res.cloudinary.com/dh3zzrrng/image/upload/v1729002381/contact-us_qndy8u.webp"
         alt="Contact Us"
         loading="lazy"
         className="w-full h-[70vh] object-cover hidden lg:block"

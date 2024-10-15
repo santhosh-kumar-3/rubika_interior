@@ -10,6 +10,7 @@ const ServiceDetailPage = ({ name, description, images }) => {
       <img
         src={images[0]}
         alt="description"
+        loading="lazy"
         className="w-full h-[60vh] md:h-[70vh] object-cover top-0 left-0 z-0"
       />
 
@@ -48,7 +49,8 @@ const ServiceDetailPage = ({ name, description, images }) => {
           <div className="col-span-1 md:col-span-2">
             <img
               src={images[0]}
-              alt="work-0"
+              alt="work-0"  
+              loading="lazy"
               className="w-full h-[350px] md:h-[380px] lg:h-[400px] object-cover"
             />
           </div>
@@ -57,6 +59,7 @@ const ServiceDetailPage = ({ name, description, images }) => {
               <img
                 src={img}
                 alt={`work-${index + 1}`}
+                loading="lazy"
                 className="w-full h-[350px] md:h-[380px] lg:h-[400px] object-cover"
               />
             </div>

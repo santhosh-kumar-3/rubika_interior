@@ -263,16 +263,18 @@ const Footer = () => {
         </div>
 
         <div className="mt-10">
-        <div className="self-start relative ">
-          <h1 className="text-[18px] font-medium tracking-widest uppercase">
-            Contact us
-          </h1>
-          <div className="absolute top-[-6px] left-0 w-[22%] border-t-[2.5px] border-white"></div>
-        </div>
-        <div className="flex text-[17px] flex-col mt-2">
-          <p>9176870710</p>
-          <p>rubikainterior@gmail.com</p>
-        </div>
+          <div className="self-start relative ">
+            <h1 className="text-[18px] font-medium tracking-widest uppercase">
+              Contact us
+            </h1>
+            <div className="absolute top-[-6px] left-0 w-[22%] border-t-[2.5px] border-white"></div>
+          </div>
+          <div className="flex text-[17px] flex-col mt-2">
+            <a href="tel:9176870710" className="hover:underline">
+              9176870710
+            </a>
+            <p>rubikainterior@gmail.com</p>
+          </div>
         </div>
 
         <div className="self-start relative mt-10">
@@ -301,26 +303,24 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 w-full flex flex-col">
-            <div className="border-t-[1px] border-gray-500 w-full"></div>
+          <div className="border-t-[1px] border-gray-500 w-full"></div>
 
-            <div className="w-full flex flex-col justify-between mt-5 text-[17px]">
-              <h1>© Rubika Interior 2024. All Rights Reserved</h1>
+          <div className="w-full flex flex-col justify-between mt-5 text-[17px]">
+            <h1>© Rubika Interior 2024. All Rights Reserved</h1>
 
-              <h1 className="mt-5">
-                Developed by{" "}
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary hover:underline"
-                >
-                  Santhoshkumar
-                </a>
-              </h1>
-            </div>
+            <h1 className="mt-5">
+              Developed by{" "}
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary hover:underline"
+              >
+                Santhoshkumar
+              </a>
+            </h1>
           </div>
-
-          
+        </div>
       </footer>
     </div>
   );

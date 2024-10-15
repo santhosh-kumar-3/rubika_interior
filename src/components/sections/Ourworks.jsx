@@ -1,15 +1,27 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import img1 from "../../assets/kitchen-img.jpg";
-import img2 from "../../assets/bedroom-img.jpg";
-import lr1 from "../../assets/LR1-main.jpg";
 
 const tabData = {
-  Kitchen: [img1, img2, img1],
-  Livingroom: [lr1, "path_to_cabinetry_image_2.jpg"],
-  Bedroom: ["path_to_bedroom_image_1.jpg", "path_to_bedroom_image_2.jpg"],
-  Cabinetry: ["path_to_furniture_image_1.jpg", "path_to_furniture_image_2.jpg"],
+  Kitchen: [
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000962/K5-main_vpw2nf.jpg",
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000963/K6-main_dtathi.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000962/K4-main_r6mnfq.jpg",
+  ],
+  Livingroom: [
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000995/LR6-main_wvtj7c.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990051/LR1-main_rbuld4.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000995/LR5-main_eopgqb.jpg",
+  ],
+  Bedroom: [
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001043/BR3-main_qozc16.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001043/BR5-main_gikzyc.jpg", 
+  ],
+  Cabinetry: [
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001022/CR4-main_elfydo.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001022/CR6-main_enyjvq.jpg", 
+    "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001021/C7-main_nmobjz.jpg"
+  ],
 };
 
 const SampleNextArrow = ({ onClick }) => {
@@ -126,6 +138,7 @@ const Ourworks = () => {
               <img
                 src={image}
                 alt={selectedTab}
+                loading="lazy"
                 className="w-full mobileS:h-[350px] mobileM:h-[380px] md:max-h-[480px] lg:h-[520px] object-cover mb-5 md:mb-10"
               />
             </div>

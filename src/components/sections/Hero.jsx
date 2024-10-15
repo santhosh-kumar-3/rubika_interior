@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import HeroImg from "../../assets/heroimg.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -12,7 +11,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img
-          src={HeroImg}
+          src="https://res.cloudinary.com/dh3zzrrng/image/upload/v1729002383/heroimg_abaxgw.jpg"
           alt="description"
           loading="lazy"
           className={`w-full h-full object-cover absolute top-0 left-0 z-0 `}
