@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import projectImg from "../../assets/projectdone-icon.png";
-import uniquedesignImg from "../../assets/uniquedesign-icon.jpg";
-import happycustomerImg from "../../assets/happycustomer-icon.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Projectdone = () => {
