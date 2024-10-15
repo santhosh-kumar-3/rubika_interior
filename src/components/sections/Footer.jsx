@@ -147,8 +147,8 @@ const Footer = () => {
                   <div className="absolute top-[-6px] left-0 w-[12%] border-t-[2.5px] border-white"></div>
                 </div>
                 <p className="text-[18px] mt-4">
-                  No - 70A 3rd main road 8th cross vivekananda nagar <br />
-                  paillkarani Chennai-600100
+                  NO-70A vivekanandar nagar, 3rd main road ,<br /> 8th cross
+                  street, pallikaranai, Chennai-600100
                 </p>
               </div>
 
@@ -160,6 +160,7 @@ const Footer = () => {
                   <div className="absolute top-[-6px] left-0 w-[45%] border-t-[2.5px] border-white"></div>
                 </div>
                 <div className="flex text-[18px] flex-col mt-4">
+                  <p>9677032701</p>
                   <p>9176870710</p>
                   <p>rubikainterior@gmail.com</p>
                 </div>
@@ -257,8 +258,8 @@ const Footer = () => {
             <div className="absolute top-[-6px] left-0 w-[18%] border-t-[2.5px] border-white"></div>
           </div>
           <p className="text-[17px] mt-2">
-            No - 70A 3rd main road 8th cross vivekananda nagar <br />
-            paillkarani Chennai-600100
+            NO-70A vivekanandar nagar, 3rd main road ,<br /> 8th cross street,
+            pallikaranai, Chennai-600100
           </p>
         </div>
 
@@ -270,6 +271,9 @@ const Footer = () => {
             <div className="absolute top-[-6px] left-0 w-[22%] border-t-[2.5px] border-white"></div>
           </div>
           <div className="flex text-[17px] flex-col mt-2">
+            <a href="tel:9677032701" className="hover:underline">
+              9677032701
+            </a>
             <a href="tel:9176870710" className="hover:underline">
               9176870710
             </a>
