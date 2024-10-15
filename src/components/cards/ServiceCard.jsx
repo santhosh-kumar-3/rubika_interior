@@ -21,7 +21,6 @@ const ServiceCard = ({ title, description, image }) => {
             src={image}
             alt={title}
             className="w-full h-full object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black"></div>
           <div className="absolute bottom-0 w-full transform translate-y-2/3 transition-transform duration-500 group-hover:translate-y-10">
@@ -55,7 +54,6 @@ const ServiceCard = ({ title, description, image }) => {
             src={image}
             alt={title}
             className="w-full h-full object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black"></div>
           <div className="absolute bottom-0 w-full">

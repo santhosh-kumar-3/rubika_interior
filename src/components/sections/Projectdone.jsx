@@ -91,6 +91,7 @@ const Projectdone = () => {
                   src={stat.icon}
                   alt="icon"
                   className="text-[40px] w-[80px]"
+                  loading="lazy"
                 />
 
                 {/* Text and Animated Count */}
@@ -122,6 +123,7 @@ const Projectdone = () => {
                 src={stats[2].icon}
                 alt="icon"
                 className="text-[40px] w-[80px]"
+                loading="lazy"
               />
 
               {/* Text and Animated Count */}
@@ -154,6 +156,7 @@ const Projectdone = () => {
                 src={stat.icon}
                 alt="icon"
                 className="text-[40px] w-[80px]"
+                loading="lazy"
               />
 
               {/* Text and Animated Count */}
