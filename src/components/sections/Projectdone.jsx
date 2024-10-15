@@ -6,8 +6,7 @@ import happycustomerImg from "../../assets/happycustomer-icon.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Projectdone = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const animateCount = (start, end, setValue) => {
     let current = start;
@@ -27,7 +26,7 @@ const Projectdone = () => {
   const [uniqueDesigns, setUniqueDesigns] = useState(0);
   const [happyClients, setHappyClients] = useState(0);
 
-  useEffect(() => { 
+  useEffect(() => {
     animateCount(0, 100, setProjectsCompleted);
     animateCount(0, 80, setUniqueDesigns);
     animateCount(0, 100, setHappyClients);
@@ -38,10 +37,20 @@ const Projectdone = () => {
       id: 1,
       title: "Projects Completed",
       count: projectsCompleted,
-      icon: projectImg,
+      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729006914/projectdone-icon_fuuufo.png",
     },
-    { id: 2, title: "Unique Designs", count: uniqueDesigns, icon: uniquedesignImg },
-    { id: 3, title: "Happy Clients", count: happyClients, icon: happycustomerImg },
+    {
+      id: 2,
+      title: "Unique Designs",
+      count: uniqueDesigns,
+      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729006915/uniquedesign-icon_kas1mv.jpg",
+    },
+    {
+      id: 3,
+      title: "Happy Clients",
+      count: happyClients,
+      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729006915/happycustomer-icon_hpqvkm.jpg",
+    },
   ];
 
   return (
@@ -59,7 +68,10 @@ const Projectdone = () => {
           home to life.
         </p>
 
-        <button onClick={ () => navigate('/contact-us')} className="bg-dark border-[1px] w-[170px] md:w-[230px] mx-auto md:mx-0 text-white text-[16px] md:text-[18px] px-4 md:px-7 py-2 rounded-sm hover:opacity-90 hover:text-white transition-all">
+        <button
+          onClick={() => navigate("/contact-us")}
+          className="bg-dark border-[1px] w-[170px] md:w-[230px] mx-auto md:mx-0 text-white text-[16px] md:text-[18px] px-4 md:px-7 py-2 rounded-sm hover:opacity-90 hover:text-white transition-all"
+        >
           Get a Quote
         </button>
       </div>
@@ -75,7 +87,11 @@ const Projectdone = () => {
                 className="bg-white md:w-[300px] lg:w-[320px] rounded-lg p-4 flex items-center space-x-4 mx-2"
               >
                 {/* Icon */}
-                <img src={stat.icon} alt="icon" className="text-[40px] w-[80px]" />
+                <img
+                  src={stat.icon}
+                  alt="icon"
+                  className="text-[40px] w-[80px]"
+                />
 
                 {/* Text and Animated Count */}
                 <div className="flex flex-col">
@@ -102,7 +118,11 @@ const Projectdone = () => {
               className="bg-white w-[280px] md:w-[320px]  rounded-lg p-4 flex items-center space-x-4"
             >
               {/* Icon */}
-              <img src={stats[2].icon} alt="icon" className="text-[40px] w-[80px]" />
+              <img
+                src={stats[2].icon}
+                alt="icon"
+                className="text-[40px] w-[80px]"
+              />
 
               {/* Text and Animated Count */}
               <div className="flex flex-col">
@@ -130,7 +150,11 @@ const Projectdone = () => {
               className="bg-white w-[280px] rounded-lg p-2 flex flex-col space-y-2 justify-center items-center"
             >
               {/* Icon */}
-              <img src={stat.icon} alt="icon" className="text-[40px] w-[80px]" />
+              <img
+                src={stat.icon}
+                alt="icon"
+                className="text-[40px] w-[80px]"
+              />
 
               {/* Text and Animated Count */}
               <div className="flex flex-col self-center">
