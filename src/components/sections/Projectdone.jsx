@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import projectImg from "../../assets/completed-task (1).png";
+import projectImg from "../../assets/projectdone-icon.png";
+import uniquedesignImg from "../../assets/uniquedesign-icon.jpg";
+import happycustomerImg from "../../assets/happycustomer-icon.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Projectdone = () => {
@@ -38,8 +40,8 @@ const Projectdone = () => {
       count: projectsCompleted,
       icon: projectImg,
     },
-    { id: 2, title: "Unique Designs", count: uniqueDesigns, icon: projectImg },
-    { id: 3, title: "Happy Clients", count: happyClients, icon: projectImg },
+    { id: 2, title: "Unique Designs", count: uniqueDesigns, icon: uniquedesignImg },
+    { id: 3, title: "Happy Clients", count: happyClients, icon: happycustomerImg },
   ];
 
   return (
@@ -70,10 +72,10 @@ const Projectdone = () => {
             {stats.slice(0, 2).map((stat) => (
               <div
                 key={stat.id}
-                className="bg-white md:w-[300px] lg:w-[320px] shadow-xl rounded-lg p-4 flex items-center space-x-4 mx-2"
+                className="bg-white md:w-[300px] lg:w-[320px] rounded-lg p-4 flex items-center space-x-4 mx-2"
               >
                 {/* Icon */}
-                <img src={stat.icon} alt="icon" className="text-[40px]" />
+                <img src={stat.icon} alt="icon" className="text-[40px] w-[80px]" />
 
                 {/* Text and Animated Count */}
                 <div className="flex flex-col">
@@ -97,10 +99,10 @@ const Projectdone = () => {
           <div className="flex items-center justify-center col-span-1 md:col-span-2">
             <div
               key={stats[2].id}
-              className="bg-white w-[280px] md:w-[320px] shadow-xl rounded-lg p-4 flex items-center space-x-4"
+              className="bg-white w-[280px] md:w-[320px]  rounded-lg p-4 flex items-center space-x-4"
             >
               {/* Icon */}
-              <img src={stats[2].icon} alt="icon" className="text-[40px]" />
+              <img src={stats[2].icon} alt="icon" className="text-[40px] w-[80px]" />
 
               {/* Text and Animated Count */}
               <div className="flex flex-col">
@@ -128,7 +130,7 @@ const Projectdone = () => {
               className="bg-white w-[280px] rounded-lg p-2 flex flex-col space-y-2 justify-center items-center"
             >
               {/* Icon */}
-              <img src={stat.icon} alt="icon" className="text-[40px]" />
+              <img src={stat.icon} alt="icon" className="text-[40px] w-[80px]" />
 
               {/* Text and Animated Count */}
               <div className="flex flex-col self-center">

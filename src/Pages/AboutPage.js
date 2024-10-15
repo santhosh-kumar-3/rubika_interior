@@ -1,7 +1,6 @@
 import React from "react";
 import aboutbg2 from "../assets/bg-img2.jpg";
 import aboutbg3 from "../assets/about-bg3.jpg";
-import aboutbgMain from "../assets/about-us.webp";
 import CountUp from "../components/count/CountUp";
 import pricing from "../assets/reward.png";
 import precision from "../assets/set-square.png";
