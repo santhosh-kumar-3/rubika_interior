@@ -45,16 +45,8 @@ const HomePage = () => {
 
         <Services />
 
-      <motion.div
-        initial={isVisible.ourWorks ? "visible" : "hidden"}
-        whileInView="visible"
-        onViewportEnter={() => handleScroll('ourWorks')}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-        variants={imageVariants}
-      >
+      
         <Ourworks />
-      </motion.div>
 
       <motion.div
         initial={isVisible.aboutUs ? "visible" : "hidden"}
