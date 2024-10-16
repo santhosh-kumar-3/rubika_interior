@@ -83,7 +83,7 @@ const Services = () => {
       
             {/* For smaller devices */}
             <div
-              className="lg:hidden w-full mobileS:px-4 mobileM:px-5 mobileL:px-6 md:mx-0 md:w-[350px] h-[260px] md:h-[290px] mx-auto font-robotoCondensed rounded-sm"
+              className="lg:hidden mobileS:w-[300px] mobileM:w-[340px] mobileL:w-[400px] md:w-[350px] h-[260px] md:h-[290px] mx-auto font-robotoCondensed rounded-sm"
               onClick={ () => handleCardClick(service.title)}
             >
               <div className="relative w-full mx-auto h-full">
