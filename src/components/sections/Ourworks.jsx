@@ -110,7 +110,7 @@ const Ourworks = () => {
 
   return (
     <div className="h-fit pb-12 md:pb-20 w-full md:w-[95%] lg:w-[80%] mx-auto flex flex-col items-center">
-      <h2 className="text-[40px] md:text-[52px] font-semibold text-center md:text-start w-full md:pl-5 mobileS:mb-3 mb-5 md:mb-6">
+      <h2 className="text-[40px] md:text-[52px] font-semibold text-center md:text-start w-full md:pl-7 mobileS:mb-3 mb-5 md:mb-6">
         Our Works
       </h2>
       {/* Tabs */}

@@ -6,11 +6,8 @@ import Aboutus from "../components/sections/Aboutus";
 import Projectdone from "../components/sections/Projectdone";
 import ContactUs from "../components/sections/ContactUs";
 import { motion } from "framer-motion";
-
-const imageVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
+import AllServices from "../components/sections/AllServices";
+import { BsWhatsapp } from "react-icons/bs";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState({
@@ -30,16 +27,22 @@ const HomePage = () => {
 
   return (
     <>
+      {/* Floating WhatsApp Icon */}
+      <a
+        href="https://wa.me/9677032701?text=Hello!%20I%20would%20like%20to%20contact%20you."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-10 right-2 md:right-5 z-50 bg-green-500 text-white p-3 md:p-4 sm:p-2 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        <BsWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
+      </a>
+
       <Hero />
-
       <Projectdone />
-
       <Services />
-
+      <AllServices />
       <Ourworks />
-
       <Aboutus />
-
       <ContactUs />
     </>
   );
