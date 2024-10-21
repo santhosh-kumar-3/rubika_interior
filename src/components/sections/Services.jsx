@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import br1 from '../../assets/Bedroom/BR1.jpg'
 
 const Services = () => {
 
@@ -10,7 +11,7 @@ const Services = () => {
       title: "Bedroom",
       description:
         "Create your dream bedroom with our custom carpentry services. We design and build beds, wardrobes, and more, tailored to fit your style and space perfectly.",
-      image: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990006/BR1_e2rp5t.jpg",
+      image: br1,
     },
     {
       title: "Kitchen",
@@ -58,6 +59,7 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black"></div>
@@ -91,6 +93,7 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black"></div>
