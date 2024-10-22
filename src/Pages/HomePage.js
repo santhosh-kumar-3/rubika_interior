@@ -21,7 +21,7 @@ const HomePage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 800);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
