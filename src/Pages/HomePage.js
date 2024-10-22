@@ -21,7 +21,7 @@ const HomePage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Set the duration you want for loading
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
