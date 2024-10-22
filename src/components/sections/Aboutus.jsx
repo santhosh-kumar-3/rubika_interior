@@ -16,10 +16,18 @@ const Aboutus = () => {
 
         <div className="bg-black w-full flex flex-col justify-center h-[600px] text-white relative">
           <div className="absolute right-6 top-[-5%] lg:bottom-0 w-[25%] lg:w-[27%]">
-            <img src={aboutbg2} alt="img" className="w-[220px] h-[480px] lg:w-[298px] lg:h-[702px]" />
+            <img
+              src={aboutbg2}
+              alt="img"
+              className="w-[220px] h-[480px] lg:w-[298px] lg:h-[702px]"
+            />
           </div>
           <div className="absolute right-10 top-10 w-[38%]">
-            <img src={aboutbg3} alt="img" className="w-[280px] h-[480px] lg:w-[416px] lg:h-[600px]" />
+            <img
+              src={aboutbg3}
+              alt="img"
+              className="w-[280px] h-[480px] lg:w-[416px] lg:h-[600px]"
+            />
           </div>
 
           <div className="w-[95%] lg:w-[80%] h-[70%] mx-auto lg:pl-3 relative z-40 ">
@@ -27,9 +35,11 @@ const Aboutus = () => {
               About Us
             </h2>
             <p className="text-[24px] font-semibold text-start w-[50%] mb-10 leading-relaxed pl-3">
-              We are dedicated to bringing your woodworking dreams to reality.
-              With a commitment to craftsmanship, integrity, and innovation, we
-              strive to exceed your expectations with every project.
+              We are dedicated to bringing your home
+              interior dreams to reality. With a commitment to craftsmanship,
+              integrity, and innovation, we strive to exceed your expectations
+              in every space we design, from living rooms to bedrooms, kitchens,
+              and beyond.
             </p>
             <button
               onClick={() => navigate("/contact-us")}
@@ -46,9 +56,10 @@ const Aboutus = () => {
           About Us
         </h2>
         <p className="text-[20px] w-[95%] font-semibold text-start mb-10 pl-3">
-          We are dedicated to bringing your woodworking dreams to reality. With
-          a commitment to craftsmanship, integrity, and innovation, we strive to
-          exceed your expectations with every project.
+          We are dedicated to bringing your home interior dreams to reality.
+          With a commitment to craftsmanship, integrity, and innovation, we
+          strive to exceed your expectations in every space we design, from
+          living rooms to bedrooms, kitchens, and beyond.
         </p>
         <button
           onClick={() => navigate("/contact-us")}

@@ -64,15 +64,15 @@ const AboutPage = () => {
             About Us
           </h2>
           <p className="text-[20px] md:text-[24px] font-normal text-start md:w-[60%] mb-4 leading-relaxed md:pl-3">
-            At Bespoke Carpentry we are dedicated to bringing your woodworking
-            dreams to reality. With a commitment to craftsmanship, integrity,
-            and innovation, we strive to exceed your expectations with every
-            project.
+            At Rubika Interior, we are dedicated to transforming your home into
+            a masterpiece. With a strong commitment to craftsmanship, integrity,
+            and innovation, we aim to exceed your expectations with every
+            design.
           </p>
           <p className="text-[20px] md:text-[24px] font-normal text-start md:w-[52%] mb-8 md:mb-10 leading-relaxed md:pl-3">
-            Our young yet dynamic company has successfully completed numerous
-            projects worldwide, ranging in complexity and always with a focus on
-            earning and maintaining each client's trust.
+            Our dynamic team brings fresh perspectives and creative solutions,
+            having successfully completed numerous projects that enhance the
+            beauty and functionality of homes.
           </p>
 
           {/* Count Content */}
@@ -101,10 +101,9 @@ const AboutPage = () => {
           Our Values
         </h2>
         <p className="text-[20px] md:text-[24px] font-normal text-start md:w-[60%] mb-8 md:mb-12 leading-relaxed pl-3">
-          We pride ourselves on offering competitive pricing without
-          compromising on quality. Every project we undertake is crafted with
-          the highest standards of excellence, ensuring durable and beautiful
-          results.
+          We take pride in providing exceptional value through competitive
+          pricing without compromising on quality. Every project we undertake is
+          crafted to the highest standards of excellence.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-14 mb-[-30px]">

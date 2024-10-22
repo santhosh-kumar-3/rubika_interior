@@ -12,28 +12,28 @@ const Services = () => {
       description:
         "Create your dream bedroom with our custom carpentry services. We design and build beds, wardrobes, and more, tailored to fit your style and space perfectly.",
       image:
-        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990006/BR1_e2rp5t.jpg",
+        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729584870/BR1_e2rp5t.jpg",
     },
     {
       title: "Kitchen",
       description:
         "Design and build the perfect kitchen with our bespoke services. We create kitchen units that maximize functionality and style.",
       image:
-        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728989977/K1_j4xywm.jpg",
+        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729585089/K1_j4xywm.jpg",
     },
     {
       title: "Livingroom",
       description:
         "Create your dream bedroom with our custom carpentry services. We design and build beds, wardrobes, and more, tailored to fit your style and space perfectly.",
       image:
-        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728989977/K1_j4xywm.jpg",
+        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729585218/LR1_piwgsp.jpg",
     },
     {
       title: "Cabinetry",
       description:
         "Design and build the perfect kitchen with our bespoke services. We create kitchen units that maximize functionality and style.",
       image:
-        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990033/C1_gyugi9.jpg",
+        "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729585358/C1_gyugi9.jpg",
     },
   ];
 

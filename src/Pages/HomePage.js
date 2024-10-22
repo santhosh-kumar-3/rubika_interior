@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../components/sections/Hero";
 import Services from "../components/sections/Services";
 import Ourworks from "../components/sections/Ourworks";
 import Aboutus from "../components/sections/Aboutus";
 import Projectdone from "../components/sections/Projectdone";
 import ContactUs from "../components/sections/ContactUs";
-import { motion } from "framer-motion";
-import AllServices from "../components/sections/AllServices";
 import { BsWhatsapp } from "react-icons/bs";
+import Loading from "../components/loading/Loading";
 
 const HomePage = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState({
     projectDone: false,
     services: false,
@@ -18,16 +18,35 @@ const HomePage = () => {
     contactUs: false,
   });
 
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      // Clean up the event listener
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
   const handleScroll = (section) => {
     setIsVisible((prev) => ({
       ...prev,
       [section]: true,
     }));
   };
-  
 
   return (
     <>
+      {/* Show loading icon only on mobile view */}
+      {isLoading && (
+        <div className=""> {/* Hidden on medium and larger screens */}
+          <Loading />
+        </div>
+      )}
+
       {/* Floating WhatsApp Icon */}
       <a
         href="https://wa.me/9677032701?text=Hello!%20I%20would%20like%20to%20contact%20you."
@@ -38,13 +57,17 @@ const HomePage = () => {
         <BsWhatsapp className="w-7 h-7 md:w-8 md:h-8" />
       </a>
 
-      <Hero />
-      <Projectdone />
-      <Services />
-      <AllServices />
-      <Ourworks />
-      <Aboutus />
-      <ContactUs />
+      {/* Main content */}
+      {!isLoading && (
+        <>
+          <Hero />
+          <Projectdone />
+          <Services />
+          <Ourworks />
+          <Aboutus />
+          <ContactUs />
+        </>
+      )}
     </>
   );
 };

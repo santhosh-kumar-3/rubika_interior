@@ -24,9 +24,9 @@ const Projectdone = () => {
   const [happyClients, setHappyClients] = useState(0);
 
   useEffect(() => {
-    animateCount(0, 100, setProjectsCompleted);
-    animateCount(0, 80, setUniqueDesigns);
-    animateCount(0, 100, setHappyClients);
+    animateCount(0, 80, setProjectsCompleted);
+    animateCount(0, 50, setUniqueDesigns);
+    animateCount(0, 80, setHappyClients);
   }, []);
 
   const stats = [
