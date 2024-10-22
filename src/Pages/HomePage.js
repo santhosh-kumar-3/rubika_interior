@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../components/sections/Hero";
 import Services from "../components/sections/Services";
+import AllServices from '../components/sections/AllServices'
 import Ourworks from "../components/sections/Ourworks";
 import Aboutus from "../components/sections/Aboutus";
 import Projectdone from "../components/sections/Projectdone";
@@ -58,6 +59,7 @@ const HomePage = () => {
           <Hero />
           <Projectdone />
           <Services />
+          <AllServices />
           <Ourworks />
           <Aboutus />
           <ContactUs />

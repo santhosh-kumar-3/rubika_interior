@@ -7,6 +7,10 @@ import ServiceDetailPage from "./Pages/ServiceDetailPage";
 import AboutPage from "./Pages/AboutPage";
 import ContactusPage from "./Pages/ContactusPage";
 import ScrollToTop from "./components/scroll/ScrollToTop";
+import k2Img from "./assets/Kitchen/K2.jpg";
+import l1Img from "./assets/living-room/LR1.jpg";
+import br2Img from "./assets/Bedroom/BR2.jpg";
+import c3Img from "./assets/Cabinetry/C3.jpg";
 
 const services = [
   {
@@ -14,7 +18,7 @@ const services = [
     description:
       "Designed to your vision, we craft unique interiors that bring elegance and functionality into every corner. Elevate your kitchen with our bespoke design solutions. We blend style and practicality to create personalized, beautiful spaces that suit your lifestyle and needs.",
     images: [
-      "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728989978/K2_z1uykg.jpg",
+      k2Img,
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000962/K5-main_vpw2nf.jpg",
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000963/K7-main_bm5vqf.jpg",
     ],
@@ -24,7 +28,7 @@ const services = [
     description:
       "Make your living room the heart of your home with our tailored interior solutions. We design spaces that are both welcoming and functional, reflecting your lifestyle and taste.",
     images: [
-      "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990051/LR1_piwgsp.jpg",
+      l1Img,
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729000995/LR6-main_wvtj7c.jpg",
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990051/LR1-main_rbuld4.jpg",
     ],
@@ -34,7 +38,7 @@ const services = [
     description:
       "Craft a personal sanctuary with our bespoke bedroom designs. We blend comfort, elegance, and smart space solutions to create a restful and stylish environment that reflects your vision.",
     images: [
-      "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990009/BR2_s1d8n0.jpg",
+      br2Img,
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001042/BR6-main_ce8jkn.jpg",
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001043/BR3-main_qozc16.jpg",
     ],
@@ -44,7 +48,7 @@ const services = [
     description:
       "Elevate your storage with our custom cabinetry solutions. From modern to classic designs, we offer beautifully crafted pieces that enhance both the aesthetic and functionality of your space.",
     images: [
-      "https://res.cloudinary.com/dh3zzrrng/image/upload/v1728990032/C3_xgoi2n.jpg",
+      c3Img,
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001022/CR4-main_elfydo.jpg",
       "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729001022/CR6-main_enyjvq.jpg",
     ],
