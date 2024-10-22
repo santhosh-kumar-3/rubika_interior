@@ -19,16 +19,11 @@ const HomePage = () => {
   });
 
   useEffect(() => {
-    const handleLoad = () => {
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    };
+    }, 2000); // Set the duration you want for loading
 
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      // Clean up the event listener
-      window.removeEventListener("load", handleLoad);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   const handleScroll = (section) => {
@@ -42,7 +37,7 @@ const HomePage = () => {
     <>
       {/* Show loading icon only on mobile view */}
       {isLoading && (
-        <div className=""> {/* Hidden on medium and larger screens */}
+        <div>
           <Loading />
         </div>
       )}
