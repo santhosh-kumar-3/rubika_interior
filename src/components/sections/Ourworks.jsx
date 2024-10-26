@@ -28,9 +28,7 @@ const SampleNextArrow = ({ onClick }) => {
   const screenWidth = window.innerWidth;
 
   // Set arrow size and position based on screen width
-  const arrowSize = screenWidth < 768 ? 20 : 24; // smaller on mobile, larger on desktop
-  const arrowPositionRight = screenWidth < 768 ? "30%" : "37%"; // adjust position for mobile
-  const arrowPositionBottom = screenWidth < 768 ? "-7.5%" : "-7.2%"; // adjust vertical position
+  const arrowSize = screenWidth < 768 ? 20 : 24; 
 
   return (
     <div

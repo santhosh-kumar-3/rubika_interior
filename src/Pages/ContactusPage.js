@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import contactImg from "../assets/contact-us.webp";
-import contactImgMobile from "../assets/contact-us-mobile.webp";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import emailjs from "emailjs-com";
 

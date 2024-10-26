@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const Projectdone = () => {
@@ -40,13 +40,13 @@ const Projectdone = () => {
       id: 2,
       title: "Unique Designs",
       count: uniqueDesigns,
-      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729006915/uniquedesign-icon_kas1mv.jpg",
+      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729903318/uniquedesign-icon_kas1mv.jpg",
     },
     {
       id: 3,
       title: "Happy Clients",
       count: happyClients,
-      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729006915/happycustomer-icon_hpqvkm.jpg",
+      icon: "https://res.cloudinary.com/dh3zzrrng/image/upload/v1729903306/happycustomer-icon_hpqvkm.jpg",
     },
   ];
 

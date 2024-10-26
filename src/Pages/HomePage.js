@@ -11,13 +11,7 @@ import Loading from "../components/loading/Loading";
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isVisible, setIsVisible] = useState({
-    projectDone: false,
-    services: false,
-    ourWorks: false,
-    aboutUs: false,
-    contactUs: false,
-  });
+  
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,13 +20,6 @@ const HomePage = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const handleScroll = (section) => {
-    setIsVisible((prev) => ({
-      ...prev,
-      [section]: true,
-    }));
-  };
 
   return (
     <>

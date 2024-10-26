@@ -21,6 +21,11 @@ const Footer = () => {
     { name: "About", href: "/about-us/" },
   ];
 
+  const handleLinkClick = (e, href) => {
+    if (location.pathname === href) e.preventDefault();
+ };
+ 
+
   return (
     <div className="">
       <footer className="hidden md:block bg-dark w-full md:h-[94vh] lg:h-[84vh] md:py-10 lg:py-20 text-white font-robotoCondensed px-12 lg:px-40">
@@ -211,12 +216,7 @@ const Footer = () => {
             >
               <Link
                 to={item.href}
-                onClick={(e) => {
-                  // Prevent navigation if already on the same page
-                  if (location.pathname === item.href) {
-                    e.preventDefault();
-                  }
-                }}
+                onClick={(e) => handleLinkClick(e, item.href)}
                 className="relative z-10"
               >
                 {item.name}
@@ -236,12 +236,7 @@ const Footer = () => {
             >
               <Link
                 to={item.href}
-                onClick={(e) => {
-                  // Prevent navigation if already on the same page
-                  if (location.pathname === item.href) {
-                    e.preventDefault();
-                  }
-                }}
+                onClick={(e) => handleLinkClick(e, item.href)}
                 className="relative z-10"
               >
                 {item.name}

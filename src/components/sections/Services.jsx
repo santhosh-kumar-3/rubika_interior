@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import br1 from "../../assets/Bedroom/BR1.jpg";
 import LazyImage from "../optimize/LazyImage";
 
 const Services = () => {
