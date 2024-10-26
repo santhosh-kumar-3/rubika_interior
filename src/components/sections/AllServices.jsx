@@ -14,7 +14,7 @@ import aluminum from "../../assets/all-services/roll.png";
 import fabrication from "../../assets/all-services/steel.png";
 import doors from "../../assets/all-services/open.png";
 import ACP from "../../assets/all-services/office-building.png";
-import corian from "../../assets/all-services/tile.png";
+import renovation from "../../assets/all-services/home-repair.png";
 import waterProofing from "../../assets/all-services/water.png";
 import construction from "../../assets/all-services/brickwall.png";
 import toughened from "../../assets/all-services/window.png";
@@ -38,7 +38,7 @@ const AllServices = () => {
     { icon: fabrication, title: "MS fabrication work" },
     { icon: doors, title: "UPVC doors and windows" },
     { icon: ACP, title: "ACP works" },
-    { icon: corian, title: "Corian top" },
+    { icon: renovation, title: "Renovation work" },
     { icon: waterProofing, title: "Water proofing works" },
     { icon: construction, title: "Building construction" },
     { icon: toughened, title: "Toughened glass works" },
